@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>卡拉马佐夫兄弟阅读摘要 · Complete Mobile</title>
+  <style>
+    :root {
+      --bg: #f3efe8;
+      --card: rgba(255, 251, 245, 0.92);
+      --ink: #1e1a17;
+      --muted: #6b6057;
+      --accent: #a54a2a;
+      --accent-soft: #e4c3b2;
+      --line: rgba(60, 39, 25, 0.12);
+      --shadow: 0 18px 48px rgba(57, 36, 22, 0.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 0% 0%, rgba(165, 74, 42, 0.14), transparent 26%),
+        radial-gradient(circle at 100% 12%, rgba(68, 90, 120, 0.10), transparent 24%),
+        linear-gradient(180deg, #f8f4ee 0%, var(--bg) 100%);
+      color: var(--ink);
+      font-family: "PingFang SC", "Noto Serif SC", serif;
+      line-height: 1.72;
+    }
+    .wrap {
+      width: min(880px, calc(100vw - 20px));
+      margin: 0 auto;
+      padding: 14px 0 28px;
+    }
+    .hero, .section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+    .hero {
+      padding: 20px 18px 18px;
+      overflow: hidden;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -40px;
+      top: -30px;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(165, 74, 42, 0.12), transparent 68%);
+    }
+    .eyebrow {
+      margin: 0;
+      color: var(--accent);
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-size: 11px;
+    }
+    h1 {
+      margin: 10px 0 0;
+      font-size: clamp(30px, 8vw, 54px);
+      line-height: 0.95;
+      letter-spacing: -0.05em;
+    }
+    .sub {
+      margin: 14px 0 0;
+      font-size: 16px;
+      color: var(--muted);
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 12px 12px 10px;
+      border-radius: 18px;
+      border: 1px solid rgba(60, 39, 25, 0.08);
+      background: rgba(255,255,255,0.62);
+    }
+    .stat .label {
+      display: block;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .stat .value {
+      display: block;
+      margin-top: 6px;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .section {
+      margin-top: 14px;
+      padding: 18px;
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 22px;
+      line-height: 1.15;
+    }
+    .lead {
+      font-size: 18px;
+    }
+    .stack {
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+    }
+    .item {
+      padding: 14px 14px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.62);
+      border: 1px solid rgba(60,39,25,0.08);
+    }
+    .item strong { color: var(--accent); }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+    .chip {
+      padding: 8px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.72);
+      font-size: 13px;
+      color: #4d4036;
+    }
+    blockquote {
+      margin: 0;
+      padding-left: 14px;
+      border-left: 3px solid var(--accent-soft);
+    }
+    .small { margin-top: 8px; font-size: 13px; color: var(--muted); }
+    @media (min-width: 740px) {
+      .wrap { width: min(980px, calc(100vw - 34px)); padding-top: 24px; }
+      .hero { padding: 28px 28px 24px; }
+      .section { padding: 22px 24px; }
+      .stats { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">Complete Mobile Edition</p>
+      <h1>《卡拉马佐夫兄弟》<br />综合阅读摘要</h1>
+      <p class="sub">这版把你前面几次分析里最重要的层都收在一起，而且以手机优先排版。重点放在三件事：核心判断、人格坐标、你真正关心的问题。</p>
+      <div class="stats">
+        <div class="stat"><span class="label">阅读进度</span><span class="value">100%</span></div>
+        <div class="stat"><span class="label">完成日期</span><span class="value">2025-08-07</span></div>
+        <div class="stat"><span class="label">划线</span><span class="value">50</span></div>
+        <div class="stat"><span class="label">点评</span><span class="value">50</span></div>
+      </div>
+      <div class="chips">
+        <span class="chip">思想基因外科手术</span>
+        <span class="chip">自由 vs 统治</span>
+        <span class="chip">具体的爱</span>
+        <span class="chip">人格坐标</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>核心判断</h2>
+      <p class="lead">你最终不是把这本书定义成“最难的一本书”，而是定义成“对自己改变最深的一本书”。新增的终评把这一点说透了：相比那些在思想上武装过你的书，它更像一次直接改写思想基因的手术。</p>
+      <div class="stack">
+        <div class="item"><strong>文学判断：</strong> 你最服气的不是故事设计，而是陀思妥耶夫斯基对人性灰度、善恶纠缠、自我辩护和内心审判的拆解能力。</div>
+        <div class="item"><strong>思想判断：</strong> 你最重视的思想轴，是《宗教大法官》所代表的那一组冲突：奇迹、秘密、权威，与自由、真爱、责任之间的拉扯。</div>
+        <div class="item"><strong>价值判断：</strong> 你理解伊万与大法官的诱惑，但最终留下来的不是怀疑本身，而是阿辽沙式的具体之爱。</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>人格坐标</h2>
+      <div class="stack">
+        <div class="item"><strong>米嘉：</strong> 欲望、冲动、真诚、浅薄。本我式地活着，热烈、危险，但不虚伪。</div>
+        <div class="item"><strong>伊万：</strong> 理性、怀疑、批判、审判、自我分裂。你在他身上最容易照见自己的“另一个声音”。</div>
+        <div class="item"><strong>阿辽沙：</strong> 超我、真诚、平静、治愈、具体之爱。你最终把他留在心里，作为自己在轻浮、狡猾、作恶时会突然想到的那个人。</div>
+      </div>
+      <p class="small">也就是说，这本书在你这里已经不只是作品，而是一套理解自己和理解人的内部地图。</p>
+    </section>
+
+    <section class="section">
+      <h2>你真正关心的问题</h2>
+      <div class="stack">
+        <div class="item"><strong>自由还是统治：</strong> 人究竟能不能承受自由？为什么奇迹、秘密、权威总会比自由更让人省力？</div>
+        <div class="item"><strong>抽象的爱还是具体的爱：</strong> 你反复被“切实的爱”打中，因为你不相信只停留在概念上的爱。</div>
+        <div class="item"><strong>真诚还是自我作假：</strong> 你对“尤其要力戒向自己作假”这句抓得很牢，这几乎是你的阅读底线。</div>
+        <div class="item"><strong>怀疑之后停在哪里：</strong> 你能理解伊万式思辨的诱惑，但你没有把终点放在怀疑，而是放在更真诚、更具体、更能落地的生活态度上。</div>
+        <div class="item"><strong>儿童与教育：</strong> 你对尾声的反应很强，说明你不仅被宏大思想击中，也很在意善如何在童年和记忆里长期起作用。</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>阅读画像</h2>
+      <div class="stack">
+        <div class="item"><strong>你最强的阅读姿态：</strong> 高度赞叹，但不盲从。你会明确写“对此我选择 NO”，说明你接受冲击，同时保留判断。</div>
+        <div class="item"><strong>你最强的自我投射：</strong> 与伊万相关的“另一个声音”、元认知、理智心声，明显触发了你长期的自我观察。</div>
+        <div class="item"><strong>你最终的归宿：</strong> 终评最后落在“热爱生活，而不是热爱生活的意义”和“爱具体的人，而不是爱人类”上，说明你最后站到了阿辽沙这一侧。</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>代表性摘录</h2>
+      <div class="stack">
+        <div class="item"><blockquote>“有三种力量……奇迹、秘密和权威。”</blockquote><div class="small">这是你理解全书的思想轴。</div></div>
+        <div class="item"><blockquote>“切实的爱是一件严酷和令人生畏的事情。”</blockquote><div class="small">这是你对“爱”最稳定的判断落点。</div></div>
+        <div class="item"><blockquote>“主要的是力戒作假，尤其要力戒向自己作假。”</blockquote><div class="small">这几乎是你整次阅读的底层伦理。</div></div>
+        <div class="item"><blockquote>“爱具体的人，而不是爱人类。”</blockquote><div class="small">终评最终停在这里，也让整本书从思想震撼收束到生活实践。</div></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
